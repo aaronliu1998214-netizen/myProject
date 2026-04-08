@@ -1,0 +1,46 @@
+.overview {
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1vh;
+    }
+
+    .icon {
+        height: 48px;
+        width: 48px;
+        background-image: url('~@/assets/screen/item1.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: left center;
+        margin-right: 2vh;
+    }
+
+    .chartBox {
+        .chartTitle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .title {
+                position: relative;
+                padding-left: 12px;
+                /* 留出小圆点的位置 */
+                font-size: 1.3vh;
+                color: #ffffff;
+            }
+
+            .title::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 6px;
+                height: 6px;
+                background-color: #187CAE;
+                border-radius: 50%;
+            }
+        }
+    }
+}

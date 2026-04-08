@@ -1,0 +1,206 @@
+.main {
+    .itemPng {
+        text-align: center;
+        position: absolute;
+        width: 74px;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+        }
+
+        .title {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 12px;
+            width: 100%;
+        }
+
+        .tips {
+            transform: translate(70px, 0px);
+            backdrop-filter: blur(4px);
+            z-index: 1 !important;
+
+            .ant-popover-inner {
+                background-color: transparent !important;
+            }
+        }
+
+        .jump {
+            animation: myJump 2s ease-in-out 0.5s infinite alternate running;
+        }
+    }
+
+    .arrowsBox {
+        position: absolute;
+        overflow: hidden;
+
+        img {
+            width: 60px;
+            transform: translateX(-60px);
+        }
+
+
+        &.arrows1 {
+            left:3%;
+            top: 13px;
+            // width: 380px;
+            width: 25%;
+            transform: rotate(0deg);
+            transform-origin: left;
+
+            img {
+                animation: move1 4s ease-in-out 0s infinite normal running;
+            }
+        }
+
+
+        &.arrows2 {
+            left: 28%;
+            top: 13px;
+            width: 25%;
+            transform: rotate(0deg);
+            transform-origin: left;
+
+            img {
+                animation: move2 4s ease-in-out 1s infinite normal running;
+            }
+        }
+
+
+        &.arrows3 {
+            left: 53%;
+            top: 13px;
+            width: 25%;
+            transform: rotate(0deg);
+            transform-origin: left;
+
+            img {
+                animation: move3 4s ease-in-out 2s infinite normal running;
+            }
+        }
+
+        &.arrows4 {
+            left: 78%;
+            top: 13px;
+            width: 20%;
+            transform: rotate(0deg);
+            transform-origin: left;
+
+            img {
+                animation: move4 4s ease-in-out 3s infinite normal running;
+            }
+        }
+    }
+
+
+    @keyframes move1 {
+        from {
+            transform: translateX(-60px);
+        }
+
+        to {
+            transform: translateX(850px);
+        }
+    }
+
+    @keyframes move2 {
+        from {
+            transform: translateX(-60px);
+        }
+
+        to {
+            transform: translateX(825px);
+        }
+    }
+
+
+    @keyframes move3 {
+        from {
+            transform: translateX(-60px);
+        }
+
+        to {
+            transform: translateX(850px);
+        }
+    }
+
+    @keyframes move4 {
+        from {
+            transform: translateX(-60px);
+        }
+
+        to {
+            transform: translateX(850px);
+        }
+    }
+    
+
+    @keyframes myJump {
+        from {
+            transform: translateY(0px) scale(1);
+        }
+
+        to {
+            transform: translateY(-20px) scale(1.1);
+        }
+    }
+}
+
+/* 气泡毛玻璃 + 透明背景 */
+.glass-pop .ant-popover-inner {
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 12px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    /* 动画 */
+    opacity: 0;
+    transform: translateX(6px);
+    animation: fadeSlideIn 0.25s ease forwards;
+}
+
+.glass-pop .ant-popover-arrows {
+    display: none;
+    /* 毛玻璃一般不需要箭头，更干净 */
+}
+
+/* 内容字体 */
+.pop-content {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 140px;
+    line-height: 20px;
+}
+
+/* fade + slide 动画 */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 原有的样式不动 */
+.itemPng {
+    position: absolute;
+    text-align: center;
+}
+
+.itemPng img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.itemPng .title {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+}

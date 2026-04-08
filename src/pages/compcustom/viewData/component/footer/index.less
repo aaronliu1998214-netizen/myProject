@@ -1,0 +1,21 @@
+.footer_mian {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* 占满父容器宽度 */
+
+  .btn {
+    flex: 1; /* 平均分配宽度 */
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 14px 0; /* 垂直内边距，不占宽度 */
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+
+  .active {
+    background-color: #1890ff;
+  }
+}

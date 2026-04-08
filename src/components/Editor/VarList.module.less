@@ -1,0 +1,35 @@
+.container {
+
+  display: flex;
+  gap: 30px;
+
+  .varTypeList, .varValueList {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 150px;
+    border: 1px solid #ccc;
+    overflow: auto;
+  }
+
+  .hemodiv{
+    display: flex;
+    align-items: center;
+    .varItem {
+      display: flex;
+      justify-content: center;
+      padding: 4px;
+      cursor: pointer;
+      flex: 1;
+    }
+  
+    .varItem.active {
+      background-color: rgb(122, 122, 243);
+      color: white;
+    }
+    .bott{
+      width: 15%;
+      text-align: center;
+    }
+  }
+}

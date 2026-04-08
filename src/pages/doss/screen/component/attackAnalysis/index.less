@@ -1,0 +1,114 @@
+.attack {
+    position: relative;
+    .top_l {
+        position: absolute;
+        top: -6vh;
+        left: -5vh;
+    }
+
+    .bar_bg {
+        position: absolute;
+        top: 9vh;
+        left: 2.4vh;
+        height: 6vh;
+        width: 15vh;
+        // bar_bg
+        background-image: url('~@/assets/screen/bar_bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: left center;
+    }
+
+    .top {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+
+        .top_item_l {
+            height: 50%;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .top_item_r {
+            width: 50%;
+            height: 100%;
+            overflow-y: scroll;
+            /* 隐藏滚动条但保留滚动功能 */
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+
+            /* Internet Explorer 10+ */
+            .list_item {
+                display: flex;
+                // justify-content:space-between;
+                align-items: center;
+                font-size: 1.4vh;
+
+                .point {
+                    border-radius: 50%;
+                    width: 0.6vh;
+                    height: 0.6vh;
+                    margin-right: 0.5vh;
+                }
+            }
+        }
+
+        .top_item_r::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Edge */
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bottom_item {
+            // height: 100%;
+            width: 10vh;
+            height: 10vh;
+        }
+    }
+
+
+    .chartTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .title {
+            position: relative;
+            padding-left: 12px;
+            /* 留出小圆点的位置 */
+            font-size: 1.3vh;
+            color: #ffffff;
+        }
+
+        .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background-color: #187CAE;
+            border-radius: 50%;
+        }
+    }
+}
+
+.water-eval-container {
+    width: 100%;
+    height: 100%;
+}
+
+.cityGreenLand-charts {
+    margin: auto;
+    height: 30vh;
+    width: 30vh;
+}

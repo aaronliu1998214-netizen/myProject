@@ -1,0 +1,87 @@
+
+
+  .screen_table {
+    background-color: transparent !important;
+    font-size: 0.7vw !important; // ✅ 设置表格文字大小
+    .ant-table {
+      background-color: transparent !important;
+    }
+
+    .ant-table-container {
+      background-color: transparent !important;
+    }
+
+    // ✅ 表头样式（背景红色 + 去除边框）
+    .ant-table-thead > tr > th {
+      background-color: #ffffff0d !important; // 表头背景红色
+      // background-color: transparent !important;
+
+      color: #00FFFF !important;
+      height: 1vh;
+      padding: 0 8vw;
+      line-height: 1vh;
+      font-size: 0.7vw;
+      font-weight: 300 !important;
+      border-bottom: none !important;
+      border-right: none !important;
+    }
+
+    .ant-table-thead > tr > th:last-child {
+      border-right: none !important;
+    }
+
+    // ✅ 偶数行背景红色（nth-child(2n)）
+    .ant-table-tbody > tr:nth-child(2n) > td {
+      background-color: #1211110d !important;
+    }
+
+    // ✅ 表格内容样式（奇数行透明、无边框）
+    .ant-table-tbody > tr > td {
+      background-color: transparent !important;
+      height: 1vh;
+      line-height: 1vh;
+      padding: 0 0.7vw;
+      color: #fff;
+      border-bottom: none !important;
+      border-right: none !important;
+    }
+
+    .ant-table-tbody > tr > td:last-child {
+      border-right: none !important;
+    }
+
+    .ant-table-tbody > tr {
+      height: 1vh;
+    }
+
+    .ant-table-cell {
+      height: 1vh;
+      line-height: 1vh;
+      padding: 0 0.7vw;
+    }
+
+    .ant-table-wrapper,
+    .ant-table,
+    .ant-table-container,
+    .ant-table-content {
+      border: none !important;
+    }
+
+    .ant-table-body {
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .ant-table-body::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
+    }
+
+    .ant-table-tbody > tr:hover > td,
+    .ant-table-tbody > tr.ant-table-row-selected > td {
+      background: transparent !important;
+    }
+  }
+
+  .table_box{
+    width: 100%;
+    overflow-x: hidden;
+  }

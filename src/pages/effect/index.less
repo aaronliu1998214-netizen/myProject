@@ -1,0 +1,75 @@
+.mian {
+  background-image: url('@/assets/dashbord/dashbordbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  padding: 0.5vw;
+  box-sizing: border-box;
+  font-size: 0.7vw;
+
+    /* 隐藏滚动条 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 和 Edge */
+  overflow: auto; /* 确保可以滚动 */
+  
+  /* Chrome, Safari, Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+    .block {
+     
+    }
+
+  .header{
+    flex: 1;
+    color: #fff;
+    background-image: url('@/assets/dashbord/header.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+  }
+
+  .row1 {
+    display: flex;
+    gap: 0.5vw;
+    height: 50%;
+
+    .block {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0.8;
+    }
+  }
+
+  .row2 {
+    display: flex;
+    gap: 0.5vw;
+    height: 30%;
+
+    .block {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      opacity: 0.8;
+    }
+  }
+
+  .row3 {
+    display: flex;
+    gap: 0.5vw;
+    height: 25%;
+
+    .block {
+      flex: 1;
+      color: white;
+    }
+  }
+}

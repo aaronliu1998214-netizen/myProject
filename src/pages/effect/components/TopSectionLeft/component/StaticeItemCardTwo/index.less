@@ -1,0 +1,36 @@
+.staticitem{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:nth-child(1){
+        margin-top: 0.5vw;
+    }
+    .title{
+        background-image: url('@/assets/dashbord/dataItembg2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 90%;
+        background-position: center center;
+        background-color: #FFD15C;
+        text-align: center;
+    }
+    .boxvalue{
+        display: flex;
+        flex: 1;
+        gap: 0.5vw;
+        align-items: center;
+        justify-content: center;
+        gap:0.5vw;
+        font-size:0.8vw;
+           .box{
+            height: 100%;
+           }
+           .value{
+             font-size: 1.5vw;
+             color: #FFD15C;
+             line-height: 1.2vw;
+           }
+    }
+}

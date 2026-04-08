@@ -1,0 +1,60 @@
+.modal_card {
+    height: 10vh;
+    background: url('~@/assets/screen/modalbg.png') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* 背景图宽高都适配 div */
+    padding: 0.8vh 1vh;
+    will-change: transform;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+    .top {
+        height: 3vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-left: 1vh;
+
+        .close {
+            background: url('~@/assets/screen/close.png') no-repeat center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* 背景图宽高都适配 div */
+            height: 1.8vh;
+            width: 1.8vh;
+            will-change: transform;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .item{
+            .icon{
+            background: url('~@/assets/screen/close.png') no-repeat center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* 背景图宽高都适配 div */
+            height: 1.9vh;
+            width: 1.9vh;
+            margin-right: 0.5vh;
+            }
+            .text{
+                font-weight: 400;
+                font-size: 1.5vh;
+                color: #ffffff;
+            }
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .content {
+        height: 6vh;
+        color: #FFDF00;
+        padding: 0 1vh;
+    }
+}

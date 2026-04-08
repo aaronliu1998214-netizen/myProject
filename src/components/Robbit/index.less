@@ -1,0 +1,27 @@
+.robit{
+    animation: myJump 2s ease-in-out 0.5s infinite alternate running;
+}
+
+
+    @keyframes myJump {
+        from {
+            transform: translateY(0px) scale(1.2);
+        }
+
+        to {
+            transform: translateY(-20px) scale(1.1);
+        }
+    }
+.bg{
+    background-image: url('~@/assets/images/wl.png');
+    height: 30px;
+    width: 100px;
+    // background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+    animation: myJump 2s ease-in-out 0.5s infinite alternate running;
+    position: absolute;
+    top: -10px;
+    z-index: 10000;
+}

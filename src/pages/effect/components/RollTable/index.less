@@ -1,0 +1,42 @@
+
+.rollTable{
+    flex: 1;
+    .screen_table{
+        :global {
+            .ant-table {
+            background: rgba(0, 163, 255, 0.1);
+            overflow: hidden;
+            .ant-table-thead > tr > th {
+                background: #01143a;
+                font-size: 0.6vw;
+                color: #ffffff;
+                border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+                font-weight: 500;
+                line-height: 1vh;
+
+            }
+            
+            .ant-table-tbody > tr > td {
+                background: transparent;
+                color: #BFE7F9;
+                font-size: 0.6vw;
+                font-weight: 300;
+                line-height: 0.7vh;
+                border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+            }
+            
+            .ant-table-tbody > tr:hover > td {
+                background: rgba(59, 130, 246, 0.1);
+            }
+            .ant-table-body {
+                background: transparent;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            }
+        }
+    }
+}

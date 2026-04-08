@@ -1,0 +1,175 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // 让页面高度至少占满屏幕
+  position: relative;
+  // background-image: url('~@/assets/screen/back.png'); // 暂时
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* 背景图宽高都适配 div */
+  background-position: center; /* 居中显示 */
+    
+  .header {
+    // width: 100%;
+    // height: 50px;
+  }
+  .container {
+    display: flex;
+    flex: 1; // 占据除了 header/footer 的全部空间
+
+    .column {
+      width: 25vw;
+      position: relative;
+      z-index: 999;
+    }
+
+    .column:nth-child(2) {
+      width: 50vw;
+      z-index: 50;
+    }
+
+    .column:first-child {
+      min-height: 100%; // 高度撑到底部
+    }
+    .column:last-child {
+      min-height: 100%;
+      z-index: 999;
+    }
+    .column_left{
+     background: linear-gradient(to right, #051f4e, transparent);
+    }
+    .column_right{
+     background: linear-gradient(to left, #051f4e, transparent);
+    }
+  }
+
+  .footer {
+    background: linear-gradient(to top, #051f4e, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; // 在内容下方
+  }
+
+  .alarm_modal{
+    position: absolute;
+    bottom: 8vh;
+    left: 25vw;
+    right: 25vw;
+    height: 23vh;
+    z-index: 999; // 在内容下方
+  }
+
+  .action{
+    min-height: 100vh; // 让页面高度至少占满屏幕
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+  }
+}
+
+
+
+.custom-radio-group {
+  .ant-radio-button-wrapper {
+    height: 3vh;
+    line-height: 3vh;
+    font-size: 1.5vh; // 缩小字体防止撑开高度
+  }
+}
+
+  .custom-radio-group .ant-radio-button-wrapper {
+    background-color: transparent !important;
+    color: white;
+    border-color: white;
+    transition: all 0.3s;
+    // height: 3vh !important;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper:hover {
+    color: #FF9805;
+    border-color: #FF9805;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper-checked {
+    color: #FF9805 !important;
+    border-color: #FF9805 !important;
+    background-color: rgba(255, 152, 5, 0.15); // 可选，半透明背景提升视觉反馈
+    z-index: 1;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper-checked:hover {
+    color: #FF9805;
+    border-color: #FF9805;
+  }
+
+  .css-dev-only-do-not-override-12puf7y.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: #FF9805 !important;
+  }
+
+  :where(.css-dev-only-do-not-override-36gkoj).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: #FF9805 !important;
+  }
+
+.morebtn {
+  background-color: transparent !important;
+  color: #00FFFF !important;
+  height: 2vh !important;
+  border: 1px solid #00FFFF !important;
+  padding: 0 0.6vh !important;
+  min-width: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5vh !important;
+  font-size: 1.3vh !important;
+
+  &:hover,
+  &:focus {
+    color: #00FFFF !important;
+    border-color: #00FFFF !important;
+    background-color: rgba(255, 0, 0, 0.05) !important; // 可选：hover 效果
+  }
+}
+
+
+
+  .popupClassName_select {
+    box-sizing: border-box !important;
+    color: #ffffff !important; /* 下拉菜单字体颜色 */
+    background-color: #00000033 !important; /* 下拉菜单背景色 */
+    border-radius: 0 !important ;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: inset 0px 0px 8px 2px rgba(12, 123, 164, 0.3) !important;
+    .ant-select-item-option {
+      color: #ffffff !important; /* 下拉项字体颜色 */
+      border-radius: 0px 0px 0px 0px;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2) !important; /* 鼠标悬停时的背景色 */
+      }
+      &.ant-select-item-option-selected {
+        background-color: rgba(255, 255, 255, 0.3) !important; /* 选中项的背景色 */
+      }
+    }
+    .ant-select-item-option:nth-last-child(1) {
+      border: none !important;
+    }
+  }
+
+
+// 修改 RangePicker 弹出面板的背景颜色
+.popupClassName_picker {
+  background-color: #d2dae9 !important; /* 下拉菜单背景色 */
+  .ant-picker-panel {
+    background-color: #d2dae9 !important; // 或你想要的颜色
+    // color: #fff !important; // 根据需要设置字体颜色
+  }
+  .ant-picker-range-wrapper .ant-picker-date-range-wrapper {
+    // background-color: #263757 !important;
+  }
+}

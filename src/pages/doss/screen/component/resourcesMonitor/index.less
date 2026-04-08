@@ -1,0 +1,94 @@
+.resour {
+
+    .cardLabel{
+        font-size: 1.2vh
+    }
+    .item {
+        height: 16vh;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: end;
+        position: relative;
+
+        .echartbox {
+            height: 16vh;
+            width: 16vh;
+            background-image: url('~@/assets/screen/bar_bg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* 背景图宽高都适配 div */
+            background-position: left center;
+        }
+    }
+
+    .item_1 {
+        height: 10vw;
+        width: 10vw;
+        position: absolute;
+        top: -3vh;
+        left: 0;
+        background-image: url('~@/assets/screen/bar_bg.png');
+        background-repeat: no-repeat;
+        background-size: 6.5vw 6.5vw;
+        /* 背景图宽高都适配 div */
+        background-position: center center;
+    }
+
+    .item_2 {
+        width: 50%;
+    }
+
+    .item_2_fles {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .point {
+        border-radius: 50%;
+        width: 0.6vh;
+        height: 0.6vh;
+        margin-right: 0.5vh;
+    }
+
+    .list_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .list {
+        margin-top: 0.8vh;
+        font-size: 1.2vh;
+    }
+}
+
+.chartBox {
+
+    .chartTitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .title {
+            position: relative;
+            padding-left: 12px;
+            /* 留出小圆点的位置 */
+            font-size: 1.3vh;
+            color: #ffffff;
+        }
+
+        .title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            background-color: #187CAE;
+            border-radius: 50%;
+        }
+    }
+}

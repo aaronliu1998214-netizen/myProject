@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'DS-DIGIT-3';
+  src: url('@/assets/dashbord/youshebiaotihei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.topSectionRight{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    .bottom{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        gap: 1vw;
+        .blockItem{
+            width: 25%;
+            background-image: url('@/assets/dashbord/databg.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            justify-items: center;
+            font-family: 'DS-DIGIT-3', sans-serif;
+            padding-bottom: 1vh;
+            font-size: 1vw;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.footer_mian {
+  display: flex;
+  justify-content: space-around;
+  height: 7vh;
+  background: url('~@/assets/screen/footer.png') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* 背景图宽高都适配 div */
+  .btn {
+    flex: 1; /* 平均分配宽度 */
+    width: 12vw;
+    color: #ffffff;
+    background: url('~@/assets/screen/footer_1.png') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* 背景图宽高都适配 div */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size:1.2vw;
+    text-shadow: 0 2px 4px #02123b33;
+  }
+
+  .active {
+    background: url('~@/assets/screen/footer_2.png') no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* 背景图宽高都适配 div */
+  }
+}

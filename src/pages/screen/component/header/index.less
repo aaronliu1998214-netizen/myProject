@@ -1,0 +1,73 @@
+.header_main {
+  display: flex;
+  align-items: start;
+  // height: 120px;
+  height: 12.5vh;
+  background: url('~@/assets/screen/title.png') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* 背景图宽高都适配 div */
+  background-position: center; /* 居中显示 */
+  // background: linear-gradient(to bottom, transparent, #051f4e);
+  // background-color: #051f4e;
+  .name {
+    height: 100%;
+    width: 30%;
+    font-family: AlibabaPuHuiTi-Bold;
+    font-weight: 700;
+    // font-size: 24px;
+    font-size: 2.2vh;
+    color: #f2f2f2;
+    // letter-spacing: 0.96px;
+    text-align: start;
+    padding: 2vh 0 0 2.5vh;
+    // padding: 20px 0 0 25px;
+    background: linear-gradient(to right, #051f4e, transparent);
+    img {
+      height: 1vh;
+    }
+  }
+
+  .title {
+    // font-size: 56px;
+    font-size: 5.5vh;
+    font-weight: 900;
+    width: 40vw;
+    // line-height: 85px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff, #00c9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .time {
+    // font-size: 14px;
+    height: 100%;
+    width: 30vw;
+    color: white;
+    text-align: end;
+    padding: 2vh 2vh 0 0;
+    font-weight: 400;
+    // font-size: 14px;
+    font-size: 1.4vh;
+    background: linear-gradient(to left, #051f4e, transparent);
+    span {
+      margin: 0 1vh 0 0;
+    }
+  .back {
+    font-size: 1.4vh;
+    cursor: pointer;
+  }
+  }
+
+  .redTime {
+    color: #55c2e5;
+    font-size: 2vh;
+    font-weight: 700;
+  }
+}
+.header_bg {
+  // background: linear-gradient(to bottom, #02113a, transparent);
+  z-index: 999;
+  background-image: linear-gradient(180deg, #02123b 0%, #021643d6 47%, #05296d00 100%);
+}

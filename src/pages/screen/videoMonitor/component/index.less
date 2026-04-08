@@ -1,0 +1,116 @@
+.trimester {
+   height: 15.5vh;
+
+   .item {
+      height: 8vh;
+      //    background-color: aqua;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+         height: 6vh;
+         width: 6vh;
+         margin-right: 2vh;
+         // background: url('~@/assets/video/alarm.png') no-repeat center center;
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+      }
+
+      .text {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         align-content: end;
+         font-weight: 700;
+         font-size: 0.8vw;
+         color: #F2F2F2;
+      }
+   }
+
+   .bottom {
+      padding: 0.5vw;
+      display: flex;
+      justify-content: space-between;
+
+      .item_card {
+         width: 49%;
+         // height: 48px;
+         height: 5.5vh;
+         background-image: linear-gradient(180deg, #00b9ff33 0%, #7bd0ff1a 100%);
+         border: 0.5px solid #4eaeff80;
+         border-radius: 2px;
+         display: flex;
+         justify-content: start;
+         align-items: center;
+
+         .dot-text {
+            position: relative;
+            padding-left: 1vw;
+            padding-right: 0.5vw;
+            /* 给文字留出空间 */
+            font-size: 0.8vw;
+
+         }
+
+         .dot-text::before {
+            content: '';
+            position: absolute;
+            left: 0.6vh;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0.4vw;
+            /* 圆点的直径 */
+            height: 0.4vw;
+            /* 红色圆点 */
+            border-radius: 50%;
+            /* 圆形 */
+         }
+         //             background-color: #ffffff;
+         .dot-text_1::before {
+            background-color: #ffffff;
+         }
+         .dot-text_2::before {
+            background-color: #FF9805;
+         }
+      }
+   }
+}
+
+
+.monthly{
+
+   .mon_item{
+      height: 28.5vh;
+   }
+   .mon_legend{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .legend_item{
+      padding: 1vw;
+      .point_{
+        margin-right: 0.3vw;
+        width: 1vh;
+        height: 1vh;
+        border-radius: 50%;
+      }
+      margin-left: 1vw;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 2.5vh;
+      height: 5.8vh;
+      background-image: linear-gradient(90deg, #ffffff1a 0%, #0885d900 100%);
+      border-radius: 10vw 0 0 10vw;
+   }
+    .legend_item:nth-child(3) {
+      margin-bottom: 0;
+   }
+   .legend_name{
+      width: 3vw;
+      font-size: 1.5vh;
+   }
+}

@@ -1,0 +1,45 @@
+    .panel{
+      color: #FFFFFF;
+      padding-left:1vw;
+      padding-right:1vw;
+      margin-top: 2vh;
+      .title{
+        // width: 100%;
+        width: 23vw;
+        // height: 34px;
+        height: 3vh;
+        background-image: url('~@/assets/screen/item_title.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%; /* 背景图宽高都适配 div */
+        background-position: left center; /* 图片左对齐，垂直居中 */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tit{
+          margin-left: 2vw;
+          font-family: AlibabaPuHuiTi-Heavy;
+          font-weight: 900;
+          font-size: 0.8vw;
+          color: #00C9FF;
+          // letter-spacing: 4px;
+          // text-shadow: 0 2px 4px #02123b80;
+        }
+        .extra{
+          margin-right: 0.5vw;
+          font-size: 0.7vw;
+        }
+      }
+.content {
+  width: 100%;
+  background-image: url('~@/assets/screen/item_content.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* 背景图宽高都适配 div */
+  background-position: center; /* 居中显示 */
+  backdrop-filter: blur(4px); // 背景模糊程度
+  background-color: rgba(255, 255, 255, 0.1); // 半透明背景色叠加，增强效果
+}
+
+    }
+
+  .panel:first-child {
+    }

@@ -1,0 +1,62 @@
+  
+  @font-face {
+  font-family: 'DS-DIGIT-3';
+  src: url('@/assets/dashbord/youshebiaotihei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+  .titleBar {
+    // height: 6vh;
+    height: calc((100vh - 46px) * 0.05);
+    font-size: 0.8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DS-DIGIT-3', sans-serif;
+    font-size: 0.9vw;
+    .title {
+      height: 90%;
+      background-image: url('@/assets/dashbord/title.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: left center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2vw;
+      height: 100%;
+      .desc {
+        color: #215A8E;
+      }
+    }
+
+    .detailLink{
+        color: #3b82f6;
+        cursor: pointer;
+        padding-right: 0.5vw;
+        &:hover{
+          transform: scale(1.1);
+        }
+    }
+
+    :global {
+      .ant-picker {
+        color: #2CC0FA;
+        font-weight: 500;
+        background-color: rgba(32, 91, 255, 0.2);
+        border: 1px solid #2CC0FA;
+        border-radius: 4px;
+        height:  calc((100vh - 46px) * 0.04);
+        
+        .ant-picker-input > input {
+          color: #2CC0FA;
+          font-size: 0.6vw;
+        }
+        
+        .ant-picker-suffix {
+          color: #2CC0FA;
+        }
+      }
+    }
+  }

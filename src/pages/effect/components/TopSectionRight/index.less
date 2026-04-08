@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'DS-DIGIT-3';
+  src: url('@/assets/dashbord/youshebiaotihei.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.topSectionRight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  .content{
+    flex: 1;
+    background-image: url('@/assets/dashbord/blockbg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+    display: flex;
+    height: calc((100vh - 46px) * 0.40);
+    justify-content: center;
+    align-items: center;
+ 
+    .lefcolumn{
+      width: 17%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        font-family: 'DS-DIGIT-3', sans-serif;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        height: 46%;
+        margin-left: 0.5vw;
+        .count {
+           color: #FFD15C;
+           font-size: 2vw;
+           line-height: 2.4vw;
+        }
+        span{
+          font-size: 0.9vw;
+        }
+    
+      }
+       .block1{
+        background-image: url('@/assets/dashbord/icon1.png');
+      }
+      .block2{
+        background-image: url('@/assets/dashbord/icon2.png');
+      }
+    }
+
+    .rightcolumn{
+      width: 40vw;
+      padding: 0.5vw;
+      .screen_table{
+        :global {
+            .ant-table {
+            background: rgba(0, 163, 255, 0.1);
+            overflow: hidden;
+            .ant-table-thead > tr > th {
+                background: #01143a;
+                font-size: 0.6vw;
+                color: #ffffff;
+                border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+                font-weight: 500;
+                line-height: 1.5vh;
+
+            }
+            
+            .ant-table-tbody > tr > td {
+                background: transparent;
+                color: #BFE7F9;
+                font-size: 0.6vw;
+                font-weight: 300;
+                line-height: 0.7vh;
+                border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+            }
+            
+            .ant-table-tbody > tr:hover > td {
+                background: rgba(59, 130, 246, 0.1);
+            }
+            .ant-table-body {
+                background: transparent;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+            }
+        }
+    }
+    }
+  }
+
+}

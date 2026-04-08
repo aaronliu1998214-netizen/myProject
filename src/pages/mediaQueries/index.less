@@ -1,0 +1,35 @@
+/* 
+  Flex 自适应布局
+  - PC 端：每行 2 个卡片
+  - 移动端：每行 1 个卡片
+*/
+
+.flex-container {
+  display: flex;        // 使用 flex 布局
+  flex-wrap: wrap;      // 允许换行，否则一行会挤下所有元素
+
+
+  gap: 16px;            // 卡片之间的间距
+  padding: 16px;        // 容器内边距
+}
+
+.flex-item {
+  flex: 0 0 calc(50% - 16px); // 固定宽度为容器的 50% - 间距，保证每行 2 个
+
+
+  
+  background: #4f9eed;        // 卡片背景颜色
+  color: white;               // 字体颜色
+  padding: 20px;              // 内边距
+  text-align: center;         // 内容居中
+  border-radius: 8px;         // 圆角
+  font-size: 16px;            // 字体大小
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); // 阴影效果
+}
+
+/* 移动端样式（小于 768px 时生效） */
+@media (max-width: 768px) {
+  .flex-item {
+    flex: 0 0 100%;   // 占满整行 → 每行 1 个
+  }
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'YousheBiaoTiHei';
+    src: url('~@/assets/DS-DIGIT-4.ttf')
+}
+
+.center_select_main {
+    background-image: url('~@/assets/screen/border.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    .center_top {
+        background-image: url('~@/assets/screen/children.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: left center;
+        display: flex;
+        width: 68%;
+        justify-content: center;
+        max-height: 11vh;
+        height: 16vh;
+        align-items: center;
+        padding-top: 0.5vh;
+
+        .top_item {
+            background-image: url('~@/assets/screen/cneter_icon.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: left center;
+            width: 21%;
+            height: 8.7vh;
+            padding-left: 9%;
+            padding-top: 1.5vh;
+            font-size: 1.3vh;
+        }
+
+        .top_count {
+            font-size: 2.8vh;
+            font-weight: 600;
+            font-family: YousheBiaoTiHei;
+            line-height: 3vh;
+
+            span {
+                font-size: 1.4vh;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+.radio_select {
+    display: flex;
+    justify-content: end;
+    width: 65%;
+
+    .btnitem {
+        padding: 0.2vh 1vh;
+        cursor: pointer;
+        font-size: 1.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2vh 0.5vh;
+        border-radius: 10vh;
+        background: rgba(3, 50, 81, 0.7);
+        border: 1px solid #2080E8
+    }
+
+    .active {
+        border: 1px solid #ffffff;
+        background-color: #0376C3;
+        
+    }
+}

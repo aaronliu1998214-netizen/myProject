@@ -1,0 +1,43 @@
+/* 
+  Grid 自适应布局
+  - PC 端：每行 2 个卡片
+  - 移动端：每行 1 个卡片
+*/
+
+/* 基础样式 */
+.flex-container-grid {
+  /* 使用Grid布局 */
+  display: grid;
+  /* 定义列模板：2列，每列宽度相等 */
+  grid-template-columns: repeat(2, 1fr);
+
+
+  
+  /* 设置卡片之间的间距 */
+  gap: 20px;
+  /* 容器内边距 */
+  padding: 20px;
+}
+
+.flex-item-grid {
+  /* 卡片背景色 */
+  background-color: #f0f0f0;
+  /* 卡片内边距 */
+  padding: 20px;
+  /* 卡片圆角 */
+  border-radius: 8px;
+  /* 文字居中对齐 */
+  text-align: center;
+  /* 卡片阴影效果 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  background-color: #4f9eed;
+}
+
+/* 移动端样式（小于 768px 时生效） */
+@media (max-width: 500px) {
+  .flex-container-grid {
+    /* 移动端改为1列布局 */
+    grid-template-columns: 1fr;
+  }
+}

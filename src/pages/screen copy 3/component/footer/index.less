@@ -1,0 +1,29 @@
+.footer_mian {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* 占满父容器宽度 */
+  // height: 120px;
+  background: url('~@/assets/screen/footer.png') no-repeat center center;
+  padding: 0 0 15px 0;
+  .btn {
+    flex: 1; /* 平均分配宽度 */
+    color: #ffffff;
+    // background: url('/assets/footer_1.png') no-repeat center center
+    background: url('~@/assets/screen/footer_1.png') no-repeat center center;
+    cursor: pointer;
+    padding: 14px 0; /* 垂直内边距，不占宽度 */
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-shadow: 0 2px 4px #02123b33;
+  }
+
+  .active {
+    background: url('~@/assets/screen/footer_2.png') no-repeat center center;
+  }
+}

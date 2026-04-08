@@ -1,0 +1,67 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // 让页面高度至少占满屏幕
+  position: relative;
+  background-image: url('~@/assets/screen/back.png'); // 暂时
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* 背景图宽高都适配 div */
+  background-position: center; /* 居中显示 */
+    
+  .header {
+    // width: 100%;
+    // height: 50px;
+  }
+  .container {
+    display: flex;
+    flex: 1; // 占据除了 header/footer 的全部空间
+
+    .column {
+      width: 25vw;
+      position: relative;
+      z-index: 999;
+    }
+
+    .column:nth-child(2) {
+      width: 50vw;
+      z-index: 50;
+    }
+
+    .column:first-child {
+      min-height: 100%; // 高度撑到底部
+    }
+
+    .column:last-child {
+      min-height: 100%;
+      z-index: 999;
+    }
+    .column_left{
+     background: linear-gradient(to right, #051f4e, transparent);
+    }
+    .column_right{
+     background: linear-gradient(to left, #051f4e, transparent);
+    }
+  }
+
+  .footer {
+    background: linear-gradient(to top, #051f4e, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; // 在内容下方
+  }
+
+  .action{
+    min-height: 100vh; // 让页面高度至少占满屏幕
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; 
+
+  }
+}

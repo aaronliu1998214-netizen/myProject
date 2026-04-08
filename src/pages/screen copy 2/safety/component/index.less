@@ -1,0 +1,210 @@
+.riskBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; // 防止屏幕太小挤不下
+  // width: 100%;
+  // min-height: 90px;
+  // padding: 1vw;
+  height: 15vh;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 1vw;
+
+    .count {
+      width: 9vh;
+      height: 9vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #fff;
+      font-size: 2vh; // 响应式文字大小
+      font-weight: 900;
+
+      span {
+        margin-bottom: 0.7vw;
+      }
+    }
+
+    .name {
+      font-weight: 500;
+      color: #f2f2f2;
+      text-align: center;
+      font-size: 0.7vw;
+
+    }
+  }
+}
+
+
+
+.riskHandle {
+  .custom-radio-group .ant-radio-button-wrapper {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    transition: all 0.3s;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper:hover {
+    color: #FF9805;
+    border-color: #FF9805;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper-checked {
+    color: #FF9805 !important;
+    border-color: #FF9805 !important;
+    background-color: rgba(255, 152, 5, 0.15); // 可选，半透明背景提升视觉反馈
+    z-index: 1;
+  }
+
+  .custom-radio-group .ant-radio-button-wrapper-checked:hover {
+    color: #FF9805;
+    border-color: #FF9805;
+  }
+
+  .css-dev-only-do-not-override-12puf7y.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+    background-color: #FF9805 !important;
+  }
+
+  .radio {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content_box {
+    display: flex;
+    height: 21.5vh;
+    padding: 0px 0.6vw;
+
+    .box_1 {
+      width: 9.5vw;
+      background-image: linear-gradient(180deg, #71ccff66 0%, #71ccff00 91%);
+      border-radius: 8px;
+      padding: 0.6vw 0.8vw;
+
+      .box_1_title {
+        display: flex;
+        justify-content: start;
+      }
+
+      .box_1_content {
+        .all {
+          margin-bottom: 0.5vh;
+          height: 3vh;
+          width: 100%;
+          background: #02123b80;
+          border-radius: 2px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2vh;
+
+            div {
+              left: 2.2vw;
+              width: 0.3vw;
+              height: 0.3vw;
+              background-color: red;
+              border-radius: 50%; // 画圆
+              margin-right: 5px;
+            }
+          }
+
+          .num {
+            font-size: 1.6vh;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .i_con {
+        height: 5vh;
+        width: 5vh;
+        margin-left: 1.5vh;
+        background-image: url('~@/assets/screen/order.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* 背景图宽高都适配 div */
+        background-position: center;
+        /* 居中显示 */
+      }
+
+      .myorder {
+        padding-left: 1vw;
+      }
+    }
+
+    .box_2 {
+      // width: 22vw;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .chart_box {
+    flex: 1;
+    height: 100%;
+    // padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; // 可选：改成透明以适配背景
+  }
+
+
+}
+
+
+
+
+.work {
+  display: flex;
+  padding: 0.6vw;
+
+  .work_left {
+    // width: 80px;
+    width: 4vw;
+    height: 27vh;
+    background-image: linear-gradient(0deg, #0d95ff00 0%, #0c97ff08 40%, #00beff80 100%);
+    border: 0.5px solid #00beff80;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5vh;
+
+    .icon {
+      height: 5vh;
+      width: 5vh;
+      // margin-left: 1.5vh;
+      background-image: url('~@/assets/screen/todaywork.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      /* 背景图宽高都适配 div */
+      background-position: center;
+      /* 居中显示 */
+    }
+
+    .num {
+      text-align: center;
+    }
+  }
+
+.work_right {
+  padding-left: 0.45vw;
+}
+}
